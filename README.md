@@ -1,94 +1,74 @@
 # django_rest_framework_poc
-This project is a poc for django framework and django rest framework. 
+This project is a poc for django framework and django rest framework simulating server inventory management with authentication for user access.
 
-It includes
-- database for testing
-- data models for database construction
-- view creating
-- serialization of data
-- urls route
-- authentication of users for access
+It includes :
+* database for testing
+* data models for database construction
+* view creation
+* serialization of data
+* urls patterns creations
+* authentication of users for access
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Here is a list of all the installation you need to do :
+* Python 3
+* pip (usually comes with python 3.4 and higher 
+* cloning the project
+
+### Setting up a new environment
+
+For the project to work, we need to set up a django environment.
+*Note: you can store this environment in either the project directory or your own env directory.*
+
+open up a command line interface and write : 
 
 ```
-Give examples
+virtualenv env
+source env/bin/activate // "env\Scripts\activate" for Windows
 ```
+this will activate (env) on your CLI.
 
-### Installing
+*Note : you should be in the same directory when activating the env."*
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Next, install these two framework to the environment :
 ```
-Give the example
+pip install django
+pip install djangorestframework
 ```
+*Note : At any time, you can deactivate the environment by typing "deactivate"*
 
-And repeat
+### Starting the Project
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+navigate to the django_rest_framework_poc > django_poc directory and start the project with this command :
 
 ```
-Give an example
+python manage.py runserver
 ```
+This will fire up the web app and the browser API can be access through 
+the local address indicated on your CLI.
 
-### And coding style tests
+*Note : make sure you are in your env activation mode when you do this.*
 
-Explain what these tests test and why
+### Here are the different API available as well as Login access.
 
-```
-Give an example
-```
+**Access through Log in**
 
-## Deployment
+Username: admin
+Password : password123
 
-Add additional notes about how to deploy this on a live system
+**Access to server inventory API**
 
-## Built With
+your_local_url/serverinvent/
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+**Access to User API**
 
-## Contributing
+your_local_url/users/
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+**Managing Users**
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+your_local_url/admin/
