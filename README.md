@@ -162,6 +162,7 @@ Head to the "log in" in your browser and enter these credentials :
 Username: admin
 Password : password123
 ```
+Head to http://127.0.0.1:8000/serverinvent/ url for the login.
 
 ### Listing Servers
 
