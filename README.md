@@ -89,24 +89,18 @@ pip install djangorestframework
 navigate to the django_rest_framework_poc > django_poc directory and start the project with this command :
 
 ```
+pip install coreapi-cli
 python manage.py runserver
 ```
 This will fire up the web app and the browser API can be accessed through 
 the local address indicated on your CLI.
 
-*Note : make sure you are in your env activation mode when you do this.*
+*Note : since I use the coreapi client, We need to install it for the runserver to work.*
 
 
 ## Using a simple command line client to use the API
 
 We will use CoreAPI which is a simple command line client to use the API
-
-Simply install it with this command : 
-
-```
-pip install coreapi-cli
-```
-And you are ready to go !
 
 ### Authenticating
 
