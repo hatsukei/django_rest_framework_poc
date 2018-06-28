@@ -178,15 +178,6 @@ http://127.0.0.1:8000/serverinvent/
 ```
 This should let you see a list of the servers I created.
 
-if you encounter this : 
-
-```
-"detail": "Authentication credentials were not provided."
-```
-Don't worry, it only means you need to access the api through a user since this project include a secure administration zone.
-
-Head down to the section " Authentication " and follow the log in instruction then come back up.
-
 ### Adding a Server
 
 To add a server is fairly easy using your browser. 
