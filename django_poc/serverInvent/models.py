@@ -4,7 +4,7 @@ from django.db import models
 OS_CHOICES = (
     ("WINDOWS", "Windows"),
     ("MACINTOSH", "MAC"),
-    ("LINUS", "Linux"),
+    ("LINUX", "Linux"),
 )
 STATUS_CHOICES = (
     ("ONLINE", "Online"),
