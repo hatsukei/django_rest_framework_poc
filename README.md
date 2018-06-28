@@ -71,7 +71,7 @@ open up a command line interface and write :
 ```
 pip install virtualenv
 virtualenv env
-source env/bin/activate // "env\Scripts\activate" for Windows
+source env/bin/activate  # use "env\Scripts\activate" instead for Windows
 ```
 this will activate (env) on your CLI.
 
